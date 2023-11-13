@@ -111,7 +111,7 @@ class MyWindow(Gtk.Window):
     def on_webview_create(self, webview, navigation_action):
         url = navigation_action.get_request().get_uri()
         webbrowser.open(url)
-        return False
+        return None
 
 
 win = MyWindow()
