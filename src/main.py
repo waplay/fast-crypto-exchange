@@ -15,6 +15,7 @@ from gi.repository import Gtk, WebKit2 as WebKit
 
 import os
 import sys
+import webbrowser
 
 # Need for snap
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
@@ -28,6 +29,7 @@ class MyWindow(Gtk.Window):
         self.set_default_size(800, 650)
 
         self.webview = WebKit.WebView()
+        self.webview.connect("create", self.on_webview_create)
 
         # Create a MenuBar
         menubar = Gtk.MenuBar()
@@ -105,6 +107,11 @@ class MyWindow(Gtk.Window):
         dialog = DialogAbout(self)
         dialog.run()
         dialog.destroy()
+
+    def on_webview_create(self, webview, navigation_action):
+        url = navigation_action.get_request().get_uri()
+        webbrowser.open(url)
+        return False
 
 
 win = MyWindow()
