@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from dialog_about import DialogAbout
 from dialog_how_it_works import DialogHowItWorks
 from dialog_faq import DialogFAQ
+from dialog_contacts import DialogContacts
 
 
 class MyWindow(Gtk.Window):
@@ -54,19 +55,22 @@ class MyWindow(Gtk.Window):
         faqm = Gtk.MenuItem(label="FAQ")
         term_of_use = Gtk.MenuItem(label="Term of use")
         privacy_policy = Gtk.MenuItem(label="Privacy policy")
-        contactm = Gtk.MenuItem(label="Contact")
+        contactsm = Gtk.MenuItem(label="Contacts")
         aboutm = Gtk.MenuItem(label="About")
         helpmenu.append(how_it_worksm)
         helpmenu.append(faqm)
         helpmenu.append(term_of_use)
         helpmenu.append(privacy_policy)
-        helpmenu.append(contactm)
+        helpmenu.append(contactsm)
         helpmenu.append(aboutm)
 
          # Connect "activate" event to the handler
         aboutm.connect("activate", self.on_about_menu_item_activate)
         how_it_worksm.connect("activate", self.on_how_it_works_menu_item_activate)
         faqm.connect("activate", self.on_faq_menu_item_activate)
+        term_of_use.connect("activate", self.on_term_of_use_menu_item_activate)
+        privacy_policy.connect("activate", self.on_privacy_policy_menu_item_activate)
+        contactsm.connect("activate", self.on_contacts_menu_item_activate)
 
         # Create a VBox and add the menu and the rest of the GUI to it
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
@@ -142,6 +146,19 @@ class MyWindow(Gtk.Window):
 
     def on_faq_menu_item_activate(self, widget):
         dialog = DialogFAQ(self)
+        dialog.run()
+        dialog.destroy()
+
+    def on_term_of_use_menu_item_activate(self, widget):
+        url = "https://changenow.io/terms-of-use"
+        webbrowser.open(url)
+
+    def on_privacy_policy_menu_item_activate(self, widget):
+        url = "https://changenow.io/privacy-policy"
+        webbrowser.open(url)
+
+    def on_contacts_menu_item_activate(self, widget):
+        dialog = DialogContacts(self)
         dialog.run()
         dialog.destroy()
 

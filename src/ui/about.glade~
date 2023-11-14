@@ -58,10 +58,14 @@
             <property name="orientation">vertical</property>
             <property name="spacing">3</property>
             <child>
-              <object class="GtkLabel" id="lbl_version">
+              <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="margin-bottom">15</property>
+                <property name="label" translatable="yes">Powered by ChangeNow API</property>
+                <attributes>
+                  <attribute name="size" value="7168"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -107,15 +111,11 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel">
+              <object class="GtkLabel" id="lbl_version">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="margin-top">20</property>
                 <property name="margin-bottom">10</property>
-                <property name="label" translatable="yes">Powered by ChangeNow API</property>
-                <attributes>
-                  <attribute name="size" value="7168"/>
-                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
