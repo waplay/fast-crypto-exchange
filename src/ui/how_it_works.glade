@@ -58,7 +58,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="halign">start</property>
-                        <property name="label" translatable="yes">Instant, limitless, account-free crypto changer right in your PC. Buy, sell and exchange 850+ cryptos in a few taps using the Fast Crypto Exchange app!</property>
+                        <property name="label" translatable="yes">Instant, limitless, account-free crypto changer right in your PC. Exchange 850+ cryptos in a few taps using the Fast Crypto Exchange app!</property>
                         <property name="wrap">True</property>
                         <property name="wrap-mode">char</property>
                       </object>

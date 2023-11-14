@@ -79,8 +79,8 @@ class MyWindow(Gtk.Window):
         html_string_dark = """
     <body style="background-color:#2b2b35; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
-		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat=1500&backgroundColor=2B2B35&darkMode=true&from=btc&fromFiat=eur&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toFiat=eth&toTheMoon=true' style="height: 356px; width: 100%; border: none"></iframe>
-    	<script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
+        <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
     	
 		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px;">
         	<div style="text-align: center; margin-right: 20px;">
@@ -101,7 +101,7 @@ class MyWindow(Gtk.Window):
         html_string_light = """
     <body style="background-color:#FFFFFF; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
-		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat=1500&backgroundColor=FFFFFF&darkMode=false&from=btc&fromFiat=eur&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toFiat=eth&toTheMoon=true' style="height: 356px; width: 100%; border: none"></iframe>
+		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=FFFFFF&darkMode=false&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
         <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
     	
 		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 50px;">
