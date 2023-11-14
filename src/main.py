@@ -73,10 +73,6 @@ class MyWindow(Gtk.Window):
         vbox.pack_start(menubar, False, False, 0)
         vbox.pack_start(self.webview, True, True, 0)
 
-        # label = Gtk.Label()
-        # label.set_markup("<span font='8'>Powered by ChangeNow</span>")
-        # vbox.pack_start(label, False, False, 0)
-
         # Add the VBox to the window
         self.add(vbox)
 

@@ -73,7 +73,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Fast Crypto Exchange is a simple and fast instant cryptocurrency exchange service. You do not need to register, and your exchange will have no limits. We'll quickly convert more than 800 coins for you without charging any additional or hidden fees.</property>
+                            <property name="label" translatable="yes">Fast Crypto Exchange is a simple and fast instant cryptocurrency exchange service. You do not need to register, and your exchange will have no limits. We'll quickly convert more than 850 coins for you without charging any additional or hidden fees.</property>
                             <property name="wrap">True</property>
                             <property name="wrap-mode">char</property>
                           </object>
