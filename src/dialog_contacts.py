@@ -18,7 +18,7 @@ class DialogContacts:
         self.lbl_email = self.builder.get_object("lbl_email")
         self.lbl_email.set_markup('<a href="mailto:support@changenow.io">support@changenow.io</a>')
         self.lbl_telegram = self.builder.get_object("lbl_telegram")
-        self.lbl_telegram.set_markup('<a href="https://t.me/changeNOW_chat">@changeNOW_chat</a>')
+        self.lbl_telegram.set_markup('<a href="https://t.me/changeNOW_chat">https://t.me/changeNOW_chat</a>')
 
         self.window.show_all()
 

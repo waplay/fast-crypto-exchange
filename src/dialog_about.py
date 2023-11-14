@@ -7,6 +7,7 @@ import webbrowser
 from utils.file_utils import get_path
 from version import __version__
 
+
 class DialogAbout:
     def __init__(self, parent):
         self.builder = Gtk.Builder()
@@ -19,13 +20,15 @@ class DialogAbout:
         self.window.set_transient_for(self.parent)
         self.btn_donate = self.builder.get_object("btn_donate")
         self.lbl_version = self.builder.get_object("lbl_version")
-        self.lbl_version.set_text(
-            "version: " + __version__
-        )
+        self.lbl_version.set_text("version: " + __version__)
         self.lbl_email = self.builder.get_object("lbl_email")
-        self.lbl_email.set_markup('<a href="mailto:waplay@yahoo.com">email: waplay@yahoo.com</a>')
+        self.lbl_email.set_markup(
+            '<a href="mailto:waplay@yahoo.com">waplay@yahoo.com</a>'
+        )
         self.lbl_site = self.builder.get_object("lbl_site")
-        self.lbl_site.set_markup('<a href="https://waplay.github.io">site: waplay.github.io</a>')
+        self.lbl_site.set_markup(
+            '<a href="https://waplay.github.io">waplay.github.io</a>'
+        )
 
         self.window.show_all()
 
@@ -36,6 +39,6 @@ class DialogAbout:
         response = self.window.run()
         self.window.hide()
         return response
-    
+
     def destroy(self):
         self.window.destroy()

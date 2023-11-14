@@ -50,27 +50,34 @@ class MyWindow(Gtk.Window):
         # Add the menu to the menu items
         helpm.set_submenu(helpmenu)
 
-        # Create "About" menu item and add it to "Help" menu
+        # Create menu items and add it to "Help" menu
+        separator = Gtk.SeparatorMenuItem()
+        separator2 = Gtk.SeparatorMenuItem()
         how_it_worksm = Gtk.MenuItem(label="How it works")
         faqm = Gtk.MenuItem(label="FAQ")
         term_of_use = Gtk.MenuItem(label="Term of use")
         privacy_policy = Gtk.MenuItem(label="Privacy policy")
         contactsm = Gtk.MenuItem(label="Contacts")
         aboutm = Gtk.MenuItem(label="About")
+        statusm = Gtk.MenuItem(label="Check status")
         helpmenu.append(how_it_worksm)
         helpmenu.append(faqm)
+        helpmenu.append(statusm)
+        helpmenu.append(separator)
         helpmenu.append(term_of_use)
         helpmenu.append(privacy_policy)
         helpmenu.append(contactsm)
+        helpmenu.append(separator2)
         helpmenu.append(aboutm)
 
-         # Connect "activate" event to the handler
+        # Connect "activate" event to the handler
         aboutm.connect("activate", self.on_about_menu_item_activate)
         how_it_worksm.connect("activate", self.on_how_it_works_menu_item_activate)
         faqm.connect("activate", self.on_faq_menu_item_activate)
         term_of_use.connect("activate", self.on_term_of_use_menu_item_activate)
         privacy_policy.connect("activate", self.on_privacy_policy_menu_item_activate)
         contactsm.connect("activate", self.on_contacts_menu_item_activate)
+        statusm.connect("activate", self.on_status_menu_item_activate)
 
         # Create a VBox and add the menu and the rest of the GUI to it
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
@@ -161,6 +168,10 @@ class MyWindow(Gtk.Window):
         dialog = DialogContacts(self)
         dialog.run()
         dialog.destroy()
+
+    def on_status_menu_item_activate(self, widget):
+        url = "https://changenow.io/status-page"
+        webbrowser.open(url)
 
     def on_webview_create(self, webview, navigation_action):
         url = navigation_action.get_request().get_uri()
