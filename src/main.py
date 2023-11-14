@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from dialog_about import DialogAbout
 from dialog_how_it_works import DialogHowItWorks
+from dialog_faq import DialogFAQ
 
 
 class MyWindow(Gtk.Window):
@@ -65,6 +66,7 @@ class MyWindow(Gtk.Window):
          # Connect "activate" event to the handler
         aboutm.connect("activate", self.on_about_menu_item_activate)
         how_it_worksm.connect("activate", self.on_how_it_works_menu_item_activate)
+        faqm.connect("activate", self.on_faq_menu_item_activate)
 
         # Create a VBox and add the menu and the rest of the GUI to it
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
@@ -139,6 +141,11 @@ class MyWindow(Gtk.Window):
 
     def on_how_it_works_menu_item_activate(self, widget):
         dialog = DialogHowItWorks(self)
+        dialog.run()
+        dialog.destroy()
+
+    def on_faq_menu_item_activate(self, widget):
+        dialog = DialogFAQ(self)
         dialog.run()
         dialog.destroy()
 
