@@ -84,7 +84,7 @@ class MyWindow(Gtk.Window):
 		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat=1500&backgroundColor=2B2B35&darkMode=true&from=btc&fromFiat=eur&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toFiat=eth&toTheMoon=true' style="height: 356px; width: 100%; border: none"></iframe>
     	<script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
     	
-		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 50px;">
+		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px;">
         	<div style="text-align: center; margin-right: 20px;">
             	<p style="font-weight: bold; color: white; font-size: 14px;">Anonymous</p>
             	<p style="color: white; font-size: 12px;">No accounts, no verification, no KYC.<br>No one can block your funds.</p>
@@ -94,6 +94,9 @@ class MyWindow(Gtk.Window):
             	<p style="color: white; font-size: 12px;">You fully control your funds.<br>Each exchange takes only ~2- 25 minutes.</p>
         	</div>
     	</div>
+        <div style="width: 100%; text-align: center; margin-top: 40px;">
+            <p style="color: white; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: white; text-decoration: underline dashed blue;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+        </div>
 	</body>
         """
 
@@ -113,6 +116,9 @@ class MyWindow(Gtk.Window):
             	<p style="font-size: 12px;">You fully control your funds.<br>Each exchange takes only ~2- 25 minutes.</p>
         	</div>
     	</div>
+        <div style="width: 100%; text-align: center; margin-top: 40px;">
+            <p style="color: white; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: white; text-decoration: underline dashed blue;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+        </div>
 	</body>
         """
 
@@ -141,6 +147,7 @@ class MyWindow(Gtk.Window):
         webbrowser.open(url)
         return None
 
+    
 
 win = MyWindow()
 win.connect("destroy", Gtk.main_quit)
