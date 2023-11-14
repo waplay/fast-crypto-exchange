@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkDialog" id="dialog_how_it_works">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">How It Work</property>
+    <property name="default-width">600</property>
+    <property name="type-hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <property name="propagate-natural-height">True</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="margin-top">10</property>
+                    <property name="margin-bottom">10</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkLabel" id="lbl_1">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">Instant, limitless, account-free crypto changer right in your PC. Buy, sell and exchange 850+ cryptos in a few taps using the Fast Crypto Exchange app!</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_2">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Simple &amp; Secure Crypto Swaps</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_3">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Fast Crypto Exchange is focused on safety and simplicity – the service is registration-free and non-custodial. It means that your crypto assets are never stored on some “account”. Directly send, directly receive.</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_4">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Best Exchange Rates Found Automatically</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_5">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">You don’t need to check crypto price charts and continuously monitor different services like TradingView or CoinMarketCap to get the best crypto exchange rate. We do it for you — at the moment of the exchange, our algorithms search for the best rates on the market. If the network fees are more than 10% of the estimated value, we will warn you about it.</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_6">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">850+ Listed Digital Currencies</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_7">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">You can find all the top cryptocurrencies along with less-known tokens or promising new coins. The list of supported crypto currencies includes Bitcoin (BTC), Ethereum (ETH), Cardano (ADA), Bitcoin Cash (BCH), Litecoin (LTC), Ripple (XRP), Stellar (XLM), Dogecoin (DOGE), SHIBA INU (SHIB), Polkadot (DOT), Chainlink (LINK), Tether (USDT), Solana (SOL), VeChain (VET), Nexo (NEXO) &amp; many other altcoins.
+Stablecoins: Tether (USDT), TrueUSD (TUSD), DAI, USD Coin (USDC), Binance USD (BUSD), Gemini Dollar (GUSD).
+DEFI-tokens: Uniswap (UNI), Yearn.finance (YFI), SushiSwap (SUSHI), PancakeSwap (CAKE).</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">6</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_8">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Swap as Much Crypto as You Want</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">7</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_9">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Exchange limits are lame — this is why we’ve cut them off! The minimum limit to trade your crypto is around $2, while the upper limit is simply doesn’t exist. Even a one-time over-9000 bitcoins transaction will be processed.</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">8</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_10">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Faster Than Light</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">9</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_11">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">It takes about 1 minute to create an exchange, and another 2 to process it. The time span can vary from 2 to 40 minutes depending on the coin’s network congestion.</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">10</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_12">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Intuitive in-app Search</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">11</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_13">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Popular cryptocurrency search requests contain numerous typos and misspellings. We know what you are looking for, so the in-app search will help you to find the desired asset, even if the name is typed incorrectly.</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">12</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_14">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">24/7 Live Support</property>
+                        <attributes>
+                          <attribute name="size" value="13312"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">13</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_15">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Support team will make your crypto exchange experience smooth and pleasant. Have a question about your transaction or an issue with the app? We’ll take care immediately!</property>
+                        <property name="wrap">True</property>
+                        <property name="wrap-mode">char</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">14</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">16</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
