@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Fast Crypto Exchange
+Exec=fast-crypto-exchange
+Icon=${SNAP}/meta/gui/logo.png
+Terminal=false
+Type=Application
+Categories=Finances;
