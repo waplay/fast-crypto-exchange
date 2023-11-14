@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 ui = [os.path.join('src/ui', file) for file in os.listdir('src/ui')]
 
 setup(
-    license='MIT',
+    license='Apache 2.0',
     name='fast-crypto-exchange',
     version=__version__,
     packages=find_packages(),
@@ -22,7 +22,7 @@ setup(
     install_requires=requirements,
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
     ],
 )
