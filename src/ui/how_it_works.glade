@@ -58,7 +58,10 @@
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="halign">start</property>
-                        <property name="label" translatable="yes">Instant, limitless, account-free crypto changer right in your PC. Exchange 850+ cryptos in a few taps using the Fast Crypto Exchange app!</property>
+                        <property name="label" translatable="yes">Fast Crypto Exchange is a client app for the ChangeNOW.
+Fast Crypto Exchange is open source and does not have access to your wallets.
+
+Instant, limitless, account-free crypto changer. Exchange 850+ cryptos in a few taps  (via ChangeNOW)!</property>
                         <property name="wrap">True</property>
                         <property name="wrap-mode">char</property>
                       </object>
@@ -87,7 +90,7 @@
                       <object class="GtkLabel" id="lbl_3">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">Fast Crypto Exchange is focused on safety and simplicity – the service is registration-free and non-custodial. It means that your crypto assets are never stored on some “account”. Directly send, directly receive.</property>
+                        <property name="label" translatable="yes">ChangeNOW is focused on safety and simplicity – the service is registration-free and non-custodial. It means that your crypto assets are never stored on some “account”. Directly send, directly receive.</property>
                         <property name="wrap">True</property>
                         <property name="wrap-mode">char</property>
                       </object>
@@ -145,7 +148,7 @@
                       <object class="GtkLabel" id="lbl_7">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">You can find all the top cryptocurrencies along with less-known tokens or promising new coins. The list of supported crypto currencies includes Bitcoin (BTC), Ethereum (ETH), Cardano (ADA), Bitcoin Cash (BCH), Litecoin (LTC), Ripple (XRP), Stellar (XLM), Dogecoin (DOGE), SHIBA INU (SHIB), Polkadot (DOT), Chainlink (LINK), Tether (USDT), Solana (SOL), VeChain (VET), Nexo (NEXO) &amp; many other altcoins.
+                        <property name="label" translatable="yes">On ChangeNOW you can find all the top cryptocurrencies along with less-known tokens or promising new coins. The list of supported crypto currencies includes Bitcoin (BTC), Ethereum (ETH), Cardano (ADA), Bitcoin Cash (BCH), Litecoin (LTC), Ripple (XRP), Stellar (XLM), Dogecoin (DOGE), SHIBA INU (SHIB), Polkadot (DOT), Chainlink (LINK), Tether (USDT), Solana (SOL), VeChain (VET), Nexo (NEXO) &amp; many other altcoins.
 Stablecoins: Tether (USDT), TrueUSD (TUSD), DAI, USD Coin (USDC), Binance USD (BUSD), Gemini Dollar (GUSD).
 DEFI-tokens: Uniswap (UNI), Yearn.finance (YFI), SushiSwap (SUSHI), PancakeSwap (CAKE).</property>
                         <property name="wrap">True</property>

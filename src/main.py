@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Copyright 2003 Sergey Tsymbal (waplay)
 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,6 +27,7 @@ import webbrowser
 # Need for snap
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
+from utils.api_utils import app_launch_stats
 from dialog_about import DialogAbout
 from dialog_how_it_works import DialogHowItWorks
 from dialog_faq import DialogFAQ
@@ -95,7 +98,7 @@ class MyWindow(Gtk.Window):
         html_string_dark = """
     <body style="background-color:#2b2b35; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
-		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
+		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=true&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
         <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
     	
 		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px;">
@@ -109,7 +112,7 @@ class MyWindow(Gtk.Window):
         	</div>
     	</div>
         <div style="width: 100%; text-align: center; margin-top: 40px;">
-            <p style="color: white; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: white; text-decoration: underline dashed blue;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
         </div>
 	</body>
         """
@@ -117,7 +120,7 @@ class MyWindow(Gtk.Window):
         html_string_light = """
     <body style="background-color:#FFFFFF; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
-		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=FFFFFF&darkMode=false&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=false&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
+		<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat&backgroundColor=FFFFFF&darkMode=false&from=btc&horizontal=false&isFiat=false&lang=en-US&link_id=d52f8ce92c86d0&locales=true&logo=true&primaryColor=f45c26&to=eth&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
         <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
     	
 		<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 50px;">
@@ -131,7 +134,7 @@ class MyWindow(Gtk.Window):
         	</div>
     	</div>
         <div style="width: 100%; text-align: center; margin-top: 40px;">
-            <p style="color: white; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: white; text-decoration: underline dashed blue;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
         </div>
 	</body>
         """
@@ -144,6 +147,9 @@ class MyWindow(Gtk.Window):
             html_string = html_string_light
 
         self.webview.load_html(html_string, "")
+
+        # Сollecting app launch statistics
+        app_launch_stats()
 
     
     def on_about_menu_item_activate(self, widget):

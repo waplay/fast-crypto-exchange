@@ -73,7 +73,9 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Fast Crypto Exchange is a simple and fast instant cryptocurrency exchange service. You do not need to register, and your exchange will have no limits. We'll quickly convert more than 850 coins for you without charging any additional or hidden fees.</property>
+                            <property name="label" translatable="yes">Fast Crypto Exchange is open source and does not have access to your wallets.
+Fast Crypto Exchange is a client app for the ChangeNOW.
+ChangeNOW is a simple and fast instant cryptocurrency exchange service. You do not need to register, and your exchange will have no limits. We'll quickly convert more than 850 coins for you without charging any additional or hidden fees.</property>
                             <property name="wrap">True</property>
                             <property name="wrap-mode">char</property>
                           </object>
@@ -104,7 +106,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Fast Crypto Exchange is a member of the ChangeNOW Partner Program.
+                            <property name="label" translatable="yes">Fast Crypto Exchange is a member of the ChangeNOW Affiliate Program.
 ChangeNOW is integrated into multiple cryptocurrency trading platforms, including Binance, Bitfinex, Huobi, OKEx, and Kucoin. At the moment of the trade, we’ll choose the best exchange rate on the market at any given moment and offer it to you.</property>
                             <property name="wrap">True</property>
                             <property name="wrap-mode">char</property>

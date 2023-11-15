@@ -1,6 +1,4 @@
-import json
 import os
-
 
 def get_path(file, relative_path):
     current_file_path = os.path.abspath(file)
