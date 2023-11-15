@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2003 Sergey Tsymbal (waplay)
+# Copyright 2023 Sergey Tsymbal aka waplay
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,28 +37,19 @@ from dialog_contacts import DialogContacts
 class MyWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Fast Crypto Exchange")
-        # self.set_default_size(800, 650)
-        self.set_size_request(800, 650)
+        self.set_default_size(950, 650)
 
         self.webview = WebKit.WebView()
         self.webview.connect("create", self.on_webview_create)
 
-        # Create a MenuBar
+        # Create menu
         menubar = Gtk.MenuBar()
-
-        # Create a menu
         helpmenu = Gtk.Menu()
-
-        # Create a menu item
         helpm = Gtk.MenuItem(label="Help Center")
-
-        # Add menu items to the menu bar
         menubar.append(helpm)
-
-        # Add the menu to the menu items
         helpm.set_submenu(helpmenu)
 
-        # Create menu items and add it to "Help" menu
+        # Create menu items and add it to the menu
         separator = Gtk.SeparatorMenuItem()
         separator2 = Gtk.SeparatorMenuItem()
         how_it_worksm = Gtk.MenuItem(label="How it works")
@@ -78,7 +69,7 @@ class MyWindow(Gtk.Window):
         helpmenu.append(separator2)
         helpmenu.append(aboutm)
 
-        # Connect "activate" event to the handler
+        # Connect "activate" event to the handlers
         aboutm.connect("activate", self.on_about_menu_item_activate)
         how_it_worksm.connect("activate", self.on_how_it_works_menu_item_activate)
         faqm.connect("activate", self.on_faq_menu_item_activate)
@@ -112,7 +103,7 @@ class MyWindow(Gtk.Window):
         	</div>
     	</div>
         <div style="width: 100%; text-align: center; margin-top: 40px;">
-            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNOW API</a></p>
         </div>
 	</body>
         """
@@ -134,7 +125,7 @@ class MyWindow(Gtk.Window):
         	</div>
     	</div>
         <div style="width: 100%; text-align: center; margin-top: 40px;">
-            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNow API</a></p>
+            <p style="color: gray; font-size: 10px;">Powered by <a href="https://documenter.getpostman.com/view/8180765/SVfTPnM8?version=latest#intro" style="color: gray; text-decoration: underline dashed gray;" onclick="window.open(this.href); return false;">ChangeNOW API</a></p>
         </div>
 	</body>
         """

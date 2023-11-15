@@ -11,8 +11,8 @@ description: |
 icon: snap/gui/logo.png  
 title: Fast Crypto Exchange
 
-grade: devel # devel / stable
-confinement: devmode # devmode / strict
+grade: stable # devel / stable
+confinement: strict # devmode / strict
 
 architectures:
   - build-on: amd64
@@ -22,6 +22,7 @@ apps:
     command: snap/command-chain/desktop-launch $SNAP/bin/fast-crypto-exchange
     plugs:
       - network
+      - network-status
     extensions:
       - gnome
 
