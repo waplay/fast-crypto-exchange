@@ -13,6 +13,12 @@ To get started:
 2. Install dependencies with `pip install -r requirements.txt` 
 3. Run `python main.py`
 
+## To build SNAP:
+
+1. Clone the repo
+2. Open 'fast-crypto-exchange' directory in terminal
+3. Run command 'snapcraft'
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
